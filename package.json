@@ -1,0 +1,26 @@
+{
+  "name": "netsuite-typescript-structure",
+  "version": "1.0.0",
+  "description": "A starter project structure for writing and deploying SuiteScripts using TypeScript.",
+  "scripts": {
+    "test": "jest",
+    "setup": "npm run build && suitecloud account:setup",
+    "deploy": "npm run build && suitecloud project:deploy",
+    "build": "shx rm -rf dist && tsc && npm run copy:xml",
+    "copy:xml": "copyfiles -f src/*.xml dist/"
+  },
+  "author": "David Turton <dturton@etrivo.com> (https://etrivo.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@oracle/suitecloud-unit-testing": "^1.1.5",
+    "@types/node": "^16.11.17",
+    "copyfiles": "^2.4.1",
+    "jest": "^27.3.1",
+    "shx": "^0.3.3",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@hitc/netsuite-types": "^2021.2.14",
+    "react-native-get-random-values": "^1.7.1"
+  }
+}

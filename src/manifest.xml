@@ -1,0 +1,23 @@
+<manifest projecttype="ACCOUNTCUSTOMIZATION">
+  <projectname>SuiteScript Project Starter</projectname>
+  <frameworkversion>1.0</frameworkversion>
+  <dependencies>
+    <features>
+      <feature required="true">SERVERSIDESCRIPTING</feature>
+      <feature required="true">ASSEMBLIES</feature>
+      <feature required="true">WORKORDERS</feature>
+      <feature required="true">ADVRECEIVING</feature>
+      <feature required="true">ACCOUNTING</feature>
+      <feature required="true">MULTILOCINVT</feature>
+      <feature required="true">PAYABLES</feature>
+
+      <feature required="true">RECEIVABLES</feature>
+      <feature required="true">EXPREPORTS</feature>
+      <feature required="true">INVENTORY</feature>
+      <feature required="true">WEBSTORE</feature>
+
+      <feature required="true">CRM</feature>
+      <feature required="false">CREATESUITEBUNDLES</feature>
+    </features>
+  </dependencies>
+</manifest>
